@@ -1,1 +1,51 @@
-/* место для вашего кода */
+body {
+  font-weight: 400;
+  background-color: #fff;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  justify-content: space-between;
+  align-items: center;
+  /*проверить корректно ли значение padding*/
+  padding: 135px 50px;
+}
+
+.header__menu-list {
+  display: flex;
+  flex-direction: row;
+  /*проверить корректно ли значение gap*/
+  gap: 33px;
+  /*как убрать первый кружочек?*/
+  list-style: circle;
+}
+
+.header__menu-link {
+  color: black;
+  font-size: 18px;
+  /*проверить корректно ли значение line-height*/
+  line-height: 100%;
+  text-decoration: underline;
+}
+
+.header__menu-item_active .header__menu-link {
+  text-decoration: none;
+}
+
+.header__logo {
+  display: block;
+  width: 148px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-self: end;
+  align-items: flex-start;
+  /*проверить корректно ли значение max-width*/
+  max-width: 240px;
+}
+
+.address .header__address {
+}
