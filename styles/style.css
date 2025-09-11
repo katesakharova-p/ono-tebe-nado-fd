@@ -9,27 +9,35 @@ body {
   justify-content: space-between;
   align-items: center;
   /*проверить корректно ли значение padding*/
-  padding: 135px 50px;
+  padding: 92px 50px 96px 50px;
 }
 
-.header__menu-list {
+.header__menu {
+}
+
+.header__links-list {
   display: flex;
   flex-direction: row;
   /*проверить корректно ли значение gap*/
   gap: 33px;
-  /*как убрать первый кружочек?*/
   list-style: circle;
 }
 
-.header__menu-link {
+.header__links-list-item {
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link {
   color: black;
   font-size: 18px;
   /*проверить корректно ли значение line-height*/
   line-height: 100%;
-  text-decoration: underline;
 }
 
-.header__menu-item_active .header__menu-link {
+.header__link_active {
   text-decoration: none;
 }
 
@@ -38,14 +46,122 @@ body {
   width: 148px;
 }
 
+.header__logo-image {
+}
+
 .address {
   display: flex;
   flex-direction: column;
-  justify-self: end;
+  /*тут что-то не так, блок съехал*/
   align-items: flex-start;
-  /*проверить корректно ли значение max-width*/
   max-width: 240px;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24px;
 }
 
-.address .header__address {
+.header_address {
+  justify-self: end;
+}
+
+.footer_address {
+  justify-self: start;
+}
+
+.cover {
+  min-height: 757px;
+  /*уточнить padding*/
+
+  background-image: url("../images/cover.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.overlay {
+  /*хуй знает как сделать*/
+}
+
+.cover__title {
+  width: 100%;
+  color: #fff;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 115%;
+  letter-spacing: 30%;
+  text-transform: uppercase;
+}
+
+.aligned-text {
+  display: block;
+}
+
+.aligned-text_left {
+  text-align: left;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: right;
+}
+
+.cover__description {
+  padding: 180px 24px 120px 24 px;
+}
+
+.lots {
+}
+.lots__heading {
+}
+
+.lots__card-list {
+  list-style: initial;
+}
+
+.lots__card-list-item {
+  width: 334px;
+  min-height: 596px;
+}
+
+.card-link {
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card_type_film {
+}
+
+.card_type_book {
+}
+
+.card_type_picture {
+}
+
+.overlay {
+}
+
+.card__title {
+}
+
+.card__text {
+}
+
+.lots__look-more-link {
+}
+
+.about {
+}
+
+.footer {
+  padding: 0 24px 180px 24 px;
 }
